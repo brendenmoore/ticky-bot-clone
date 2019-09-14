@@ -12,21 +12,37 @@ p {
 
 h1 {
     font-weight: normal;
+    font-size: 4.5em;
+    color: #40596b;
+    margin: 0;
+}
+
+.subhead {
+    font-size: 1.5em;
+}
+
+#hero {
+    height: calc(110vh - 12rem);
+    padding: 1em;
 }
 
 h2 {
     font-weight: normal;
+    font-size: 2.5em;
+    letter-spacing: -.5mm;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: .25em;
     overflow: hidden;
 }
 
 li {
     display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 li a {
@@ -49,17 +65,21 @@ li a:hover {
 
 .container {
     text-align: center;
-    padding: .8em 1.2em;
-    display: flex;
+    padding: 1rem;
     justify-content: center;
 }
 
+.flex-grid {
+    display: flex;
+    align-items: center;
+}
 
 nav {
     width: 100%;
     background: #40596b;
     display: flex;
     justify-content: center;
+    font-size: 1.2em;
 }
 
 .bot {
@@ -76,9 +96,8 @@ nav {
     background: #90ddaa;
 }
 
-.container .col {
-    flex: 1;
-    width: 30%;
+.col {
+    flex: 0 1 calc(50% - 2em);
 }
 
 
