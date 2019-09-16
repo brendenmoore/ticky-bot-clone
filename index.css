@@ -156,17 +156,3 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-@media (max-width: 700px) {
-    .flex-grid {
-        display: block;
-    }
-    .col {
-        display: block;
-    }
-    .container {
-        display: block;
-    }
-    .card {
-        max-width: 1000px;
-    }
-}
