@@ -160,6 +160,25 @@ footer p {
     padding: 0;
 }
 
+.scroll-to-top {
+    background-color: #ffd05a;
+    border: 0;
+    border-radius: 4px;
+    bottom: 1rem;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.75));
+    cursor: pointer;
+    overflow: hidden;
+    padding: .5rem;
+    padding-bottom: .3rem;
+    position: fixed;
+    right: 1rem;
+    text-decoration: none;
+}
+
+.scroll-to-top img{
+    width: 2rem;
+}
+
 @media only screen and (min-width: 600px) {
     
     .flex-grid {
