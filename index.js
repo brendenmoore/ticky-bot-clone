@@ -1,3 +1,4 @@
+// smooth scrolling from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -22,4 +23,27 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+//scroll to top based on https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+//Get the button
+scrollButton = document.getElementById("scroll-to-top");
+
+// show on scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = "block";
+        } else {
+            scrollButton.style.display = "none";
+        }
+}
+
+// on click, scroll to top
+function topFunction() {
+    $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+}
 
